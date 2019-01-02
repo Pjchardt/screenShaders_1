@@ -45,9 +45,9 @@ void main() {
 
     float frequency = 10.0;
     vec2 dist = vec2(stx_ratio,st.y) -vec2(0.5*u_resolution.x/u_resolution.y,.5);
-    float angle = degrees(atan(st_center.x/st_center.y))+90;
-    if (st_center.y < 0) {
-      angle += 180;
+    float angle = degrees(atan(st_center.x/st_center.y))+90.0;
+    if (st_center.y < 0.0) {
+      angle += 180.0;
     }
     angle /= 360.0;
     angle*=frequency;
